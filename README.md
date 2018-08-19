@@ -37,8 +37,6 @@ The PDB (Procedural DataBase) is the most important interface to access the imag
     - Windows, MacOS, Linux
 
 
-
-
 ### Resources
 [Script-Fu vs Python-Fu](https://www.gimp.org/docs/python/index.html)
 

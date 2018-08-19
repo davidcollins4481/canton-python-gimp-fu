@@ -1,0 +1,36 @@
+- Version of Python to use: 2.7. Only version supported currently is Python 2.x
+- Should NOT have to add gimp python module dir to PYTHONPATH
+
+
+What happens if script doesn't appear?
+- try running as standalone to check for syntax errors or missing libs
+- Script must be executable
+- can be a symlink but original file must be executable
+
+
+Installation location:
+$HOME/.gimp-2.8/plug-ins
+
+
+demos:
+- basic plugin structure and loading
+- modify current image/layer
+- create new layer with something in it
+    - add input (watermark example)
+
+
+- plugin changes are read without having to restart GIMP
+    - unless you're editing the register params
+
+parameters to register function:
+-name
+-blurb
+-help
+-author
+-copyright
+-date
+-menupath
+-imagetypes
+-params
+-results
+-function
