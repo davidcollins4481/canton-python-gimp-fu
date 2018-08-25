@@ -9,7 +9,7 @@
     - Grouping and Multiple undos
 - Effects
 - Batch processing
-    - watermark many issues
+    - watermark many images
 
 
 ## Script-Fu vs Python-Fu

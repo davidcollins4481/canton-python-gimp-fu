@@ -34,3 +34,26 @@ parameters to register function:
 -params
 -results
 -function
+
+
+Add GIMP Python Libraries for autocomplete:
+File > Settings > Project > Project Interpreter
+Select interpreter, add path (/usr/lib/gimp-2.0/python)
+
+Some docs:
+http://www.jamesh.id.au/software/pygimp/pygimp.html
+http://gimpbook.com/scripting/
+
+
+python console notes:
+>>> gimp.image_list()
+
+
+# something we can attempt to in the session:
+- take one image
+- create many layers that are slightly rotated)
+>>> drawable = pdb.gimp_drawable_transform_rotate_default(m, .4, 1, 10, 10, 1, 0)
+
+stack them on top of each other
+decrease the opacity
+maybe merge them all
