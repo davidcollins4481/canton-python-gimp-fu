@@ -2,7 +2,7 @@
 
 from gimpfu import *
 
-def invert(image, layer):
+def invert(image, glayer):
     pdb.gimp_undo_push_group_start(image)
     map(lambda layer: pdb.gimp_invert(layer), image.layers)
     pdb.gimp_undo_push_group_end(image)

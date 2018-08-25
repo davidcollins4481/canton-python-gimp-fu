@@ -1,16 +1,19 @@
-#!/usr/bin/python
 
 from gimpfu import *
  
 def first_plugin(timg, tdrawable):
+  """
+  :type timg: gimp.Image
+  :type tdrawable: gimp.Layer
+  """
   print "Hello, world!"
  
 register(
   "hello_world",
-  "Hello, World! message",
-  "Hello, World! message",
-  "Dave Collins",
-  "Dave Collins",
+  "Blurb",
+  "Here is my help text",
+  "Dave collins",
+  "copyright",
   "2018",
   "<Image>/Image/Hello, World!",
   "RGB*, GRAY*",

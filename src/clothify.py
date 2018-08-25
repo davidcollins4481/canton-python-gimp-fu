@@ -13,7 +13,7 @@ def python_clothify(timg, tdrawable, bx=9, by=9, azimuth=135, elevation=45, dept
                            100, NORMAL_MODE)
     img.add_layer(layer_one, 0)
     pdb.gimp_edit_fill(layer_one, BACKGROUND_FILL)
-
+    print BACKGROUND_FILL
     pdb.plug_in_noisify(img, layer_one, 0, 0.7, 0.7, 0.7, 0.7)
 
     layer_two = layer_one.copy()
@@ -24,7 +24,7 @@ def python_clothify(timg, tdrawable, bx=9, by=9, azimuth=135, elevation=45, dept
     pdb.plug_in_gauss_rle(img, layer_one, bx, 1, 0)
     pdb.plug_in_gauss_rle(img, layer_two, by, 0, 1)
 
-    #img.flatten()
+    img.flatten()
 
     bump_layer = img.active_layer
 
@@ -33,7 +33,7 @@ def python_clothify(timg, tdrawable, bx=9, by=9, azimuth=135, elevation=45, dept
     pdb.plug_in_bump_map(img, tdrawable, bump_layer, azimuth,
                          elevation, depth, 0, 0, 0, 0, True, False, 0)
 
-   # gimp.delete(img)
+    gimp.delete(img)
 
 
 register(
